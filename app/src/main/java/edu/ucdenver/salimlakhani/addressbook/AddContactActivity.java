@@ -14,41 +14,20 @@ public class AddContactActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_add_contact);
-        binding = ActivityAddContactBinding.inflate(getLayoutInflater());
-        View view = binding.getRoot();
-        setContentView(view);
+        setContentView(R.layout.activity_add_contact);
 
     }
 
     public void clear(View view) {
-        binding.nameTextInput.setText("");
-        binding.phoneTextInput.setText("");
-        binding.emailTextInput.setText("");
-        binding.streetTextInput.setText("");
-        binding.cityTextInput.setText("");
-        binding.stateTextInput.setText("");
-        binding.zipTextInput.setText("");
-        binding.radioButtonBusiness.setChecked(true);
-        binding.nameTextInput.requestFocus();
+
 
     }
 
     public void mainMenu(View view) {
-        Intent mainMenu = new Intent(this, MainActivity.class);
-        startActivity(mainMenu);
+
     }
 
     public void saveContact(View view) {
-        Intent viewContactActivity = new Intent(this, ViewContactActivity.class);
-
-        String name = binding.nameTextInput.getText().toString();
-        viewContactActivity.putExtra("name", name);
-
-        String phone = binding.phoneTextInput.getText().toString();
-        viewContactActivity.putExtra("phone", phone);
-
-        startActivity(viewContactActivity);
 
     }
 }

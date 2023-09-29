@@ -16,8 +16,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addContact(View view) {
-        //Toast.makeText(this, "You clicked on Add Contact Button", Toast.LENGTH_SHORT).show();
-        Intent addContactActivity = new Intent(this, AddContactActivity.class);
-        startActivity(addContactActivity);
+        Toast.makeText(this, "You clicked on Add Contact Button", Toast.LENGTH_SHORT).show();
+
+    }
+
+    public void listContact(View view) {
+        Toast.makeText(this, "You clicked on L:ist Contact Button", Toast.LENGTH_SHORT).show();
     }
 }

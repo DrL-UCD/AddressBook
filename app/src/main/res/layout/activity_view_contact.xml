@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="View Contact"
+        android:text="@string/view_contact_header"
         android:textColor="@android:color/background_dark"
         android:textSize="50sp" />
 
@@ -24,7 +23,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
 
         <TableLayout
@@ -41,7 +40,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
                     android:padding="4dp"
-                    android:text="Name"
+                    android:text="@string/name_text"
                     android:textSize="18sp" />
 
                 <TextView
@@ -63,7 +62,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
                     android:padding="4dp"
-                    android:text="Phone:"
+                    android:text="@string/phone_label"
                     android:textSize="18sp" />
 
                 <TextView
@@ -86,7 +85,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
                     android:padding="4dp"
-                    android:text="Email:"
+                    android:text="@string/email_label"
                     android:textSize="18sp" />
 
                 <TextView
@@ -108,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
                     android:padding="4dp"
-                    android:text="Street:"
+                    android:text="@string/street_label"
                     android:textSize="18sp" />
 
                 <TextView
@@ -130,7 +129,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
                     android:padding="4dp"
-                    android:text="City:"
+                    android:text="@string/city_label"
                     android:textSize="18sp" />
 
                 <TextView
@@ -152,7 +151,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
                     android:padding="4dp"
-                    android:text="State:"
+                    android:text="@string/state_label"
                     android:textSize="18sp" />
 
                 <TextView
@@ -174,7 +173,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
                     android:padding="4dp"
-                    android:text="Zip:"
+                    android:text="@string/zip_label"
                     android:textSize="18sp" />
 
                 <TextView
@@ -197,7 +196,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
                     android:padding="4dp"
-                    android:text="Type"
+                    android:text="@string/type_label"
                     android:textSize="18sp" />
 
                 <TextView
@@ -209,28 +208,23 @@
                     android:textSize="18sp" />
             </TableRow>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <Button
-                    android:id="@+id/buttonMainMenu"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@android:color/holo_blue_dark"
-                    android:onClick="mainMenu"
-                    android:text="Main Menu"
-                    android:textSize="18sp" />
-
-            </TableRow>
-
 
         </TableLayout>
 
 
     </ScrollView>
+
+    <Button
+        android:id="@+id/buttonMainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="mainMenu"
+        android:text="@string/main_button_text"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
 
 
 </LinearLayout>
