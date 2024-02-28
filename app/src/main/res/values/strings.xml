@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Address Book</string>
+    <string name="main_menu_header">Main Menu</string>
+    <string name="add_button_text">Add Contact</string>
+    <string name="list_button_text">List Contacts</string>
+    <string name="add_contact_header">Add Contact</string>
+    <string name="name_text_hint">Name (Required)</string>
+    <string name="phone_text_hint">Phone Number</string>
+    <string name="email_text_hint">Email Address</string>
+    <string name="street_text_hint">Street Address</string>
+    <string name="city_text_hint">City</string>
+    <string name="state_text_hint">State</string>
+    <string name="zip_text_hint">Zip Code</string>
+    <string name="radio_Business">Business</string>
+    <string name="radio_family">Family</string>
+    <string name="radio_friend">Friend</string>
+    <string name="clear_button_text">Clear</string>
+    <string name="save_button_text">Save</string>
+    <string name="main_button_text">Main Menu</string>
+    <string name="radio_group_text">Type</string>
+    <string name="view_contact_header">View Contact</string>
+    <string name="name_text">Name:</string>
+    <string name="phone_label">Phone:</string>
+    <string name="email_label">Email:</string>
+    <string name="street_label">Street:</string>
+    <string name="city_label">City:</string>
+    <string name="state_label">State:</string>
+    <string name="zip_label">Zip:</string>
+    <string name="type_label">Type</string>
+</resources>
