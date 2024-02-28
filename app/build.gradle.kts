@@ -6,6 +6,10 @@ android {
     namespace = "edu.ucdenver.salimllakhani.addressbook"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "edu.ucdenver.salimllakhani.addressbook"
         minSdk = 27
