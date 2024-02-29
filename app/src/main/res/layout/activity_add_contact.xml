@@ -41,7 +41,7 @@ tools:context=".AddContactActivity">
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:imeOptions="actionNext"
-                android:inputType="textPersonName|textCapWords"
+                android:inputType="text"
                 android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>

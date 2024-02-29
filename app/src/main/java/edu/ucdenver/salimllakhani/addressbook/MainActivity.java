@@ -2,6 +2,7 @@ package edu.ucdenver.salimllakhani.addressbook;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -22,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addContact(View view) {
-        Toast.makeText(this, "You clicked on Add Contact Button", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "You clicked on Add Contact Button", Toast.LENGTH_SHORT).show();
+        Intent addContactIntent = new Intent(this, AddContactActivity.class);
+        startActivity(addContactIntent);
     }
 
     public void listContact(View view) {
